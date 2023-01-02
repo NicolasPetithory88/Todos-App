@@ -3,6 +3,7 @@ import Header from "./Header"
 import InputTodo from "./InputTodo"
 import TodosList from "./TodosList"
 import { v4 as uuidv4 } from "uuid"
+import Navbar from './Navbar'
 
 
 const TodoContainer = () => {
@@ -66,6 +67,7 @@ const TodoContainer = () => {
   return (
     <div className="container">
       <div className="inner">
+        <Navbar />
         <Header />
         <InputTodo addTodoProps={addTodoItem} />
         <TodosList
